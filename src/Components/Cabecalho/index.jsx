@@ -14,6 +14,10 @@ const BtnCabecalho = styled.a`
   color: ${(props) => (props.primary ? corPrimaria : "white")};
 `;
 
+const Logo = styled.img`
+  height: 50px;
+  width: 50px;
+`
 
 const StyledHeader = styled.nav`
   background-color: ${corPrimaria};
@@ -22,10 +26,6 @@ const StyledHeader = styled.nav`
   padding: 0 15vw;
   height: 10vh;
   align-items: center;
-`;
-const Logo = styled.img`
-  height: 50px;
-  width: 50px;
 `;
 
 const Cabecalho = () => {
