@@ -4,6 +4,7 @@ export const Icone = styled.img`
   height: 25px;
   width: 25px;
 `;
+
 export const Box = styled.div`
   display: flex;
   flex-direction: column;
@@ -15,12 +16,11 @@ export const Box = styled.div`
   width: 48%;
 
   @media (max-width: 800px) {
-  .box {
     width: 95%;
     margin: 5px;
   }
-
 `;
+
 export const Botao = styled.button`
   margin: 15px auto 0px auto;
   display: block;

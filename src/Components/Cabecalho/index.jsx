@@ -10,16 +10,12 @@ const BtnCabecalho = styled.a`
   margin: 0 10px;
   font-weight: 600;
   border: 2px solid white;
+
   background: ${(props) => (props.primary ? "white" : corPrimaria)};
   color: ${(props) => (props.primary ? corPrimaria : "white")};
 `;
 
-const Logo = styled.img`
-  height: 50px;
-  width: 50px;
-`
-
-const StyledHeader = styled.nav`
+const StyledCabecalho = styled.nav`
   background-color: ${corPrimaria};
   display: flex;
   justify-content: space-between;
@@ -28,19 +24,22 @@ const StyledHeader = styled.nav`
   align-items: center;
 `;
 
+const Logo = styled.img`
+  height: 50px;
+  width: 50px;
+`;
+
 const Cabecalho = () => {
   return (
-    <StyledHeader>
-      <Logo className="imagem-logo" src={bank_logo} alt="Logo Smart Bank" />
+    <StyledCabecalho>
+      <Logo src={bank_logo} alt="Logo Smart Bank" />
       <div>
         <BtnCabecalho primary href="https://google.com">
           Ajuda
         </BtnCabecalho>
-        <BtnCabecalho href="https://google.com">
-          Sair
-        </BtnCabecalho>
+        <BtnCabecalho href="https://google.com">Sair</BtnCabecalho>
       </div>
-    </StyledHeader>
+    </StyledCabecalho>
   );
 };
 

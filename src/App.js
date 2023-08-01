@@ -1,12 +1,13 @@
 import React from "react";
+
 import Cabecalho from "./Components/Cabecalho";
 import Container from "./Components/Container";
-import { GlobalStyle } from "./Components/globalStyle";
+import { GlobalStyle } from "./Components/GlobalStyle";
 
 function App() {
   return (
     <>
-      <GlobalStyle></GlobalStyle>
+      <GlobalStyle />
       <Cabecalho />
       <Container />
     </>
