@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Titulo = styled.h1`
-  color: grey;
+  color:  color: ${({theme}) => theme.text};;
   padding: 25px 0;
 `;
 
