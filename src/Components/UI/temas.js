@@ -7,6 +7,7 @@ import {
   conteudoClaro,
   corPrimaria
 } from "./variaveis";
+import styled from "styled-components";
 
 export const temaClaro = {
   body: fundoClaro,
@@ -19,3 +20,13 @@ export const temaEscuro = {
   inside: conteudoEscuro,
   text: textoFundoEscuro
 }
+
+export const BtnTema = styled.button`
+position: absolute;
+  top: 4vh;
+  right: 20px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  
+`
